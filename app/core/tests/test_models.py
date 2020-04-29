@@ -25,7 +25,7 @@ class ModelTests(TestCase):
          self.assertEqual(user.email , email.lower())
 
 
-    def test_new_user_email_normalized(self):
+    def test_new_user_email_blank(self):
          """ test creating new user with blank email. """
 
          with self.assertRaises(ValueError):
