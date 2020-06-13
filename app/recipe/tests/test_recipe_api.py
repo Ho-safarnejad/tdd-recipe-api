@@ -19,7 +19,7 @@ def create_tag_sample(user, name='tag name'):
 
 
 def create_ingredient_sample(user, name='ingredient name'):
-    return Tag.objects.create(user=user, name=name)
+    return Ingredient.objects.create(user=user, name=name)
 
 
 def create_sample(user, **params):
